@@ -2,28 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Docum ent</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive UI</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <div>
-            BRANDNAME
-        </div>
-        <div>
-            HOME
-            ABOUT
-            SERVICES
-            WORK
-            CONTACT US
-            <button>LOG IN</button>
-            <button class="navbar1">SING UP</button>
-        </div>
+
+ <!-- Navbar -->
+<div class="navbar">
+  <div class="logo"><span>c</span>leanify</div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <!-- Menu -->
+  <div class="menu">
+    <a href="#" class="active">HOME</a>
+    <a href="#">TUTORIAL <i class="fa fa-caret-down"></i></a>
+    <a href="#">PORTFOLIO <i class="fa fa-caret-down"></i></a>
+    <a href="#">OUR TEAM <i class="fa fa-caret-down"></i></a>
+    <a href="#">CONTACT US</a>
+    
+    <!-- Buttons -->
+    <div class="icons">
+      <button class="btn login">Login</button>
+      <button class="btn signup">Sign Up</button>
     </div>
+  </div>
+</div>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>We make your web<br>product awesome.</h1>
+      <p>We are a bunch of imaginative and experimental souls<br>
+        and we make pretty awesome designs.</p>
+      <a href="#" class="btn">GET STARTED</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://miro.medium.com/v2/resize:fit:1400/0*ZysHtPSKdKl1RGYj" alt="Team working">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p>
+        Vestibulum ac justo nisl. Sed tincidunt at mi a lobortis. Etiam et accumsan lacus.
+        Maecenas varius pharetra purus, vitae molestie neque porttitor quis. Maecenas vitae molestie enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget leo facilisis,
+        gravida arcu ac, condimentum est.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-box">
+        <i class="fa fa-crop"></i>
+        <h3>Design</h3>
+      </div>
+      <div class="service-box">
+        <i class="fa fa-layer-group"></i>
+        <h3>Development</h3>
+      </div>
+      <div class="service-box">
+        <i class="fa fa-bullhorn"></i>
+        <h3>Marketing</h3>
+      </div>
+      <div class="service-box">
+        <i class="fa fa-lightbulb"></i>
+        <h3>Strategy</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-item">
+      <div class="about-text">
+        <h4>Our Digital Company</h4>
+        <h2>Our digital company has been developing products for 15 years.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget leo facilisis, gravida arcu ac,
+          condimentum est.</p>
+        <a href="#">Learn More →</a>
+      </div>
+      <div class="about-img">
+        <img src="https://i.pinimg.com/736x/83/77/db/8377dbab8629b2b9177a537f9ba115eb.jpg" alt="work">
+      </div>
+    </div>
+
+    <div class="about-item reverse">
+      <div class="about-text">
+        <h4>Awards & Recognition</h4>
+        <h2>We’ve got a lot of awards for our work and develop applications that became popular in the world.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget leo facilisis, gravida arcu ac,
+          condimentum est.</p>
+        <a href="#">Learn More →</a>
+      </div>
+      <div class="about-img">
+        <img src="https://i.pinimg.com/736x/b2/ba/8e/b2ba8eb69ea07608089a7308dd67599e.jpg" alt="awards">
+      </div>
+    </div>
+
+    <div class="about-item">
+      <div class="about-text">
+        <h4>Digital Promotion</h4>
+        <h2>Promotion of your product is an important step in making money and constant popularity.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget leo facilisis, gravida arcu ac,
+          condimentum est.</p>
+        <a href="#">Learn More →</a>
+      </div>
+      <div class="about-img">
+        <img src="https://i.pinimg.com/1200x/ec/04/e4/ec04e4bc32b966c32c0de02dba4291ca.jpg" alt="promotion">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== Footer Section ====== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <p>Follow Us:</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <h2>Let’s do something great together!</h2>
+      <a href="#">Get in Touch →</a>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="brand">
+        <h3>BRANDNAME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo facilisis, gravida arcu ac, condimentum
+          est.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Conditions</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2025 BRANDNAME. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+   
+// Hamburger menu toggle
+function toggleMenu() {
+  const menu = document.querySelector(".menu");
+  const icons = document.querySelector(".icons");
+  
+  menu.classList.toggle("active");
+  icons.classList.toggle("active");
+}
+
+// Event listener
+const hamburger = document.querySelector(".hamburger"); const menu = document.querySelector(".menu"); hamburger.addEventListener("click", () => { menu.classList.toggle("show"); });
+
+
+  </script>
 
 </body>
 
