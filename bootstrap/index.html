@@ -25,6 +25,79 @@
       object-fit: cover;
       border-radius: 50%;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #chat-toggle {
+      display: none;
+    }
+
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .chat-box {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+    }
+
+    #chat-toggle:checked ~ .chat-box {
+      display: flex;
+    }
+
+    .chat-header {
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .chat-messages {
+      height: 200px;
+      padding: 10px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-input input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      outline: none;
+    }
+
+    .chat-input button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -147,6 +220,21 @@
     </div>
   </section>
 
+  <!-- Chat session -->
+  <input type="checkbox" id="chat-toggle">
+
+  <label for="chat-toggle" class="chat-btn">💬 Chat</label>
+
+  <div class="chat-box">
+    <div class="chat-header">Chat Box</div>
+    <div class="chat-messages">
+      
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message...">
+      <button>Send</button>
+    </div>
+  </div>
 
   <!-- ===== Footer Section ===== -->
   <footer class="bg-light pt-5">
