@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Events & Listeners</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Events & Listeners</h1>
+
+  <!-- 1. Inline onclick -->
+  <div class="box">
+    <strong>Inline onclick</strong><br>
+    <button onclick="alert('Inline onclick fired')">Inline Click</button>
+  </div>
+
+  <!-- 2. addEventListener with multiple handlers, event object -->
+  <div class="box">
+    <strong>addEventListener & event object</strong><br>
+    <button id="btn">Click me (addEventListener)</button>
+    <button id="removeBtn">Remove Mouseover Handler</button>
+    <div id="log" aria-live="polite">Logs will appear here...</div>
+  </div>
+
+  <!-- 3. Bubbling / Capturing demo -->
+  <div class="box" id="outer">
+    <strong>Propagation demo</strong>
+    <div id="inner">
+      <p>Inner container</p>
+      <button id="propBtn">Click target (propagation)</button>
+    </div>
+  </div>
+
+  <!-- 4. Delegation -->
+  <div class="box">
+    <strong>Event Delegation</strong>
+    <button id="addItem">Add item</button>
+    <ul id="list">
+      <li data-id="1">Item 1</li>
+      <li data-id="2">Item 2</li>
+    </ul>
+  </div>
+
+  <!-- 5. Form preventDefault -->
+  <div class="box">
+    <strong>Form submit (preventDefault)</strong>
+    <form id="demoForm">
+      <input id="name" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

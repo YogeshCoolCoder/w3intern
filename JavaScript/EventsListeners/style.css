@@ -1,0 +1,6 @@
+body { font-family: Arial; padding: 20px; line-height: 1.4; }
+    .box { padding: 10px; margin: 8px 0; border: 1px solid #ddd; }
+    #outer { background: #dfefff; padding: 16px; }
+    #inner { background: #e6ffe6; padding: 12px; margin-top: 8px; }
+    #log { background: #f8f8f8; padding: 8px; min-height: 80px; margin-top: 12px; white-space: pre-wrap; }
+    button{ margin:4px }
